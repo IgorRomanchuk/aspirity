@@ -17,7 +17,7 @@ export default function EmployeeLoad() {
           <h1 className="text-[24px] font-normal font-poppins text-[#E1E3E6]">
             Загрузка сотрудника
           </h1>
-          <p className="text-[#D77556] text-[14px] cursor-pointer font-medium font-poppins">
+          <p className="text-[#D77556] text-[14px] font-medium font-poppins">
             100%
           </p>
         </div>
