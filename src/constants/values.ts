@@ -54,3 +54,16 @@ export const team = [
     position: 'QA Lead',
   },
 ]
+
+export const buttons = [
+  {
+    name: 'основная информация',
+    key: 'personalInfo',
+    width: '226px',
+  },
+  {
+    name: 'отпуск',
+    key: 'vacattion',
+    width: '89px',
+  },
+]

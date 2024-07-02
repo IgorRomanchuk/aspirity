@@ -1,4 +1,11 @@
-export default function CardProfile() {
+import { buttons } from '@/constants/values'
+
+interface IProps {
+  setInfo: (e: string) => void
+  info: string
+}
+
+export default function CardProfile({ info, setInfo }: IProps) {
   return (
     <div className="h-[384px] bg-[#232324] rounded-[12px] mt-[8px] mb-[16px]  max-[630px]:h-[452px]">
       <div className="flex pl-[40px] pt-[40px]  max-[630px]:flex-col  max-[630px]:pt-[32px]  max-[630px]:p-0">
@@ -30,12 +37,21 @@ export default function CardProfile() {
         </div>
       </div>
       <div className="flex text-center h-[40px] mt-[52px] ml-[40px] max-[630px]:m-auto max-[630px]:mt-[32px] max-[630px]:max-w-[315px]">
-        <div className="uppercase text-[14px] text-[#E1E3E6] w-[226px] h-[40px] border-b-[2px] border-b-[#0047BB] font-semibold">
-          основная информация
-        </div>
-        <div className="uppercase text-[14px] text-[#B0B1B6] w-[89px] h-[40px] border-b-[1px] border-b-[#B0B1B6] font-semibold">
-          отпуск
-        </div>
+        {buttons.map((item) => {
+          const style =
+            info === item.key
+              ? 'text-[#E1E3E6] border-b-[#0047BB]'
+              : 'text-[#B0B1B6] border-b-[#B0B1B6] hover:text-[#0047BB]'
+          return (
+            <div
+              key={item.key}
+              onClick={() => setInfo(item.key)}
+              className={`cursor-pointer  uppercase text-[14px]  w-[${item.width}] h-[40px] border-b-[1px] font-semibold ${style}`}
+            >
+              {item.name}
+            </div>
+          )
+        })}
       </div>
     </div>
   )
