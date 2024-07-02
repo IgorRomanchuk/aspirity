@@ -32,15 +32,15 @@ export default function ChangeForm({
   setInitialValues,
 }: IProps) {
   const InfoSchema = Yup.object().shape({
-    name: Yup.string().required('Name_required'),
-    lastName: Yup.string().required('Lastname_required'),
-    surname: Yup.string().required('Surename_required'),
-    dateOfBirth: Yup.string().required('Date of birh_required'),
-    dateOfEmployment: Yup.string().required('Date of employment_required'),
-    country: Yup.string().required('Country_required'),
-    city: Yup.string().required('City_required'),
-    position: Yup.string().required('Position_required'),
-    email: Yup.string().email('invalid_email').required('Position_required'),
+    name: Yup.string().required('Поле обязательно'),
+    lastName: Yup.string().required('Поле обязательно'),
+    surname: Yup.string().required('Поле обязательно'),
+    dateOfBirth: Yup.string().required('Поле обязательно'),
+    dateOfEmployment: Yup.string().required('Поле обязательно'),
+    country: Yup.string().required('Поле обязательно'),
+    city: Yup.string().required('Поле обязательно'),
+    position: Yup.string().required('Поле обязательно'),
+    email: Yup.string().email('Введите email').required('Поле обязательно'),
   })
 
   const formik = useFormik({
