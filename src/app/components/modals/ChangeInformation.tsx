@@ -29,7 +29,7 @@ export default function ChangeInfoModal({
       >
         <Box
           sx={style}
-          className="w-[820px] bg-[#232324] rounded-[12px] max-[850px]:w-[360px] max-[630px]:h-[632px] max-[365px]:rounded-[0]"
+          className="w-[820px] bg-[#232324] rounded-[12px] max-[850px]:w-[360px] max-[630px]:min-h-[632px] max-[365px]:rounded-[0]"
         >
           <div className="max-w-[820px] m-auto pl-[30px] pr-[30px] max-[850px]:pr-[16px] max-[850px]:pl-[16px]">
             <div className=" mt-[32px] h-[36px] flex items-center justify-between max-[850px]:mt-[16px] max-[850px]:mb-[24px] max-[850px]:h-[24px]">

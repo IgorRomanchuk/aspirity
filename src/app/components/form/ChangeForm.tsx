@@ -226,7 +226,7 @@ export default function ChangeForm({
         </div>
         <LoadingButton
           fullWidth
-          className="mb-[32px] h-[40px] bg-[#0047BB] max-[630px]:mb-[0] max-[630px]:mt-[24px]"
+          className="mb-[32px] h-[40px] bg-[#0047BB] max-[630px]:mt-[24px] max-[630px]:mb-[16px]"
           size="large"
           type="submit"
           variant="contained"
