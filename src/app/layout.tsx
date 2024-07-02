@@ -2,6 +2,8 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 
+import Header from '@/components/header'
+
 export const metadata: Metadata = {
   title: 'aspirity',
   description: 'task',
@@ -14,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen max-w-[1494px] m-auto bg-[black] text-[white]">
+        <Header />
+        <>{children}</>
+      </body>
     </html>
   )
 }
