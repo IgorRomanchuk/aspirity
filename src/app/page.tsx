@@ -1,13 +1,7 @@
-import { Metadata } from 'next'
-
 import CardProfile from './components/cardProfile'
 import EmployeeLoad from './components/employeeLoad'
 import Header from './components/header'
 import PersonalInformation from './components/personalInformation'
-
-export const metadata: Metadata = {
-  title: 'aspirity',
-}
 
 export default function Home() {
   return (
