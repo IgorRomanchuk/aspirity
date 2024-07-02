@@ -1,0 +1,24 @@
+{
+  "plugins": ["prettier", "simple-import-sort"],
+  "extends": [
+    "next",
+    "prettier",
+    "plugin:prettier/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "semi": ["error", "never"],
+    "react/display-name": 0,
+    "react/prop-types": 0,
+
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  }
+}
