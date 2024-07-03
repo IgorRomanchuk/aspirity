@@ -46,7 +46,8 @@ export default function CardProfile({ info, setInfo }: IProps) {
             <div
               key={item.key}
               onClick={() => setInfo(item.key)}
-              className={`cursor-pointer  uppercase text-[14px]  w-[${item.width}] h-[40px] border-b-[1px] font-semibold ${style}`}
+              style={{ width: item.width }}
+              className={`cursor-pointer  uppercase text-[14px] h-[40px] border-b-[1px] font-semibold ${style}`}
             >
               {item.name}
             </div>
