@@ -20,7 +20,7 @@ export default function Header() {
                 className="rounded-[50%] ml-[16px]"
               />
             </div>
-            <div>
+            <div className="cursor-pointer">
               <img
                 src="/Union.svg"
                 alt="avatar"
